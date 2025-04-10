@@ -48,6 +48,6 @@ result = client.chat.completions.create(
         { "role": "assistant", "content": json.dumps({"step": "think", "content": "Calculate the multiplication: 4 * 5 = 20."}) },
         { "role": "assistant", "content": json.dumps({"step": "think", "content": "Next, I need to add the result of the multiplication (20) to the number 3."}) }
     ]
-)
+)   
 
 print(result.choices[0].message.content)
